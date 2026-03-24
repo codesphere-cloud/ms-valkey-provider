@@ -29,7 +29,7 @@ echo "Starting nc HTTP server on port 3000..."
 HTTP_PID=$!
 
 echo "Starting Valkey..."
-cd /home/user/app && /usr/local/bin/docker-entrypoint.sh --save 60 1 &
+cd /home/user/app && /usr/local/bin/docker-entrypoint.sh --requirepass $VALKEY_PWD --save 60 1 &
 VALKEY_PID=$!
 
 echo "Both services are running in parallel. Press Ctrl+C to stop."

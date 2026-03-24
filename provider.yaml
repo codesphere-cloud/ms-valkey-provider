@@ -14,6 +14,11 @@ version: "v1"
 iconUrl: "https://raw.githubusercontent.com/openbao/artwork/main/color/openbao-color.svg" // todo change
 
 configSchema:
+  type: object
+  properties:
+      valkeyPwd:
+        type: string
+        description: "valkey password"
 
 detailsSchema:
 
