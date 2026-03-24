@@ -1,0 +1,25 @@
+schemaVersion: v0.2
+prepare:
+  steps: []
+test:
+  steps: []
+run:
+  valkey:
+    steps:
+      - name: ""
+        command: ./fake-health.sh
+    plan: 8
+    replicas: 1
+    network:
+      ports:
+        - port: 3000
+          isPublic: false
+        - port: 6379
+          isPublic: false
+      paths:
+        - port: 6379
+          path: /
+    env: {}
+    baseImage: valkey/valkey:9.1-alpine
+    runAsUser: 1501
+    runAsGroup: 1010

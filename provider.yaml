@@ -1,0 +1,28 @@
+name: valkey
+
+# Backend configuration - points to the application repository
+backend:
+  landscape:
+    ciProfile: "prod"
+
+# Marketplace display information
+displayName: "Valkey"
+description: "open source redis alternative"
+author: "Codesphere"
+category: ""
+version: "v1"
+iconUrl: "https://raw.githubusercontent.com/openbao/artwork/main/color/openbao-color.svg" // todo change
+
+configSchema:
+
+detailsSchema:
+
+secretsSchema:
+
+
+# Service plans with pricing tiers
+plans:
+  - id: 0
+    name: "Default"
+    description: "Default Plan"
+    parameters: {}
