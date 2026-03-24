@@ -13,16 +13,15 @@ category: ""
 version: "v1"
 iconUrl: "https://avatars.githubusercontent.com/u/164458127?s=200&v=4"
 
-configSchema:
+secretsSchema:
   type: object
   properties:
-      valkeyPwd:
-        type: string
-        description: "valkey password"
-
-detailsSchema:
-
-secretsSchema:
+    valkeyPwd:
+      type: string
+      format: password
+  required:
+    - valkeyPwd
+  additionalProperties: false
 
 
 # Service plans with pricing tiers
