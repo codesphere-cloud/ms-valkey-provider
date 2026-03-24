@@ -7,7 +7,7 @@ run:
   valkey:
     steps:
       - name: ""
-        command: ./fake-health.sh
+        command: ./start.sh
     plan: 8
     replicas: 1
     network:
