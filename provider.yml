@@ -13,6 +13,14 @@ category: ""
 version: "v1"
 iconUrl: "https://avatars.githubusercontent.com/u/164458127?s=200&v=4"
 
+configSchema:
+  type: object
+  properties: []
+
+detailsSchema:
+  type: object
+  properties: []
+
 secretsSchema:
   type: object
   properties:
