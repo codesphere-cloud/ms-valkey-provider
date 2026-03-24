@@ -10,7 +10,7 @@ displayName: "Valkey"
 description: "open source redis alternative"
 author: "Codesphere"
 category: ""
-version: "v1"
+version: "v0"
 iconUrl: "https://avatars.githubusercontent.com/u/164458127?s=200&v=4"
 
 configSchema:
