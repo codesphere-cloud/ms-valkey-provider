@@ -19,7 +19,12 @@ configSchema:
 
 detailsSchema:
   type: object
-  properties: {}
+  properties:
+    service_url_valkey_6379:
+      type: string
+      format: uri
+      description: You need to replace protocol to RESP 
+  additionalProperties: false
 
 secretsSchema:
   type: object
