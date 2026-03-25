@@ -19,7 +19,8 @@ run:
       paths:
         - port: 6379
           path: /
-    env: {}
+    env:
+      VALKEY_PWD: ${{ vault.valkeyPwd }}
     baseImage: valkey/valkey:9.1-alpine
     runAsUser: 1501
     runAsGroup: 1010
